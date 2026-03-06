@@ -1,6 +1,6 @@
 export function fetchpdatedCode(code, updates) {
 
-    fetch('http://localhost:3000/code')
+    fetch('https://stardewvalley.onrender.com/code')
         .then(response => response.json())
         .then(data => {
             if(data.status === 200){

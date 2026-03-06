@@ -29,7 +29,7 @@ function handleEditCode(input) {
         alert("O código deve conter exatamente 10 caracteres.");
     }
 
-    fetch("http://localhost:3000/code", {
+    fetch("https://stardewvalley.onrender.com/code", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
