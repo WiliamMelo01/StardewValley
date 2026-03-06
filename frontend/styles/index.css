@@ -1,0 +1,168 @@
+@font-face {
+  font-family: StardewValley;
+  src: url(../assets/fonts/stardew_valley/Stardew-Valley-Regular.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: VT323;
+  src: url(../assets/fonts/stardew_valley/VT323-Regular.ttf);
+  font-weight: bold;
+}
+
+
+html, body {
+   width: 100vw;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: url('../assets/images/cursor.cur'), auto;
+}
+
+body {
+    background-image: url('../assets/images/background.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: saturate(1.1) blur(.7px);
+}
+
+body > .container {
+    width: 27%;
+    height: 50%;
+    position: relative;
+    background-image: url('../assets/images/wooden-sign.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body > .container > .title {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body > .container > .title > h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: StardewValley;
+    width: 70%;
+    text-align: center;
+    
+}
+
+body > .container > .title >  .junimo-icon {
+    width: 45px;
+    height: 45px;
+    filter: saturate(2);
+}
+
+body > .container > .code-container {
+    width: 90%;
+    height: 80px;
+    position: relative;
+}
+
+body > .container > .code-container > .papyrus {
+    width: 90%;
+    height: 100%;
+}
+
+body > .container > .code-container > input {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-0%, -50%);
+    width: 70%;
+    height: 70%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: StardewValley;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: url('../assets/images/cursor.cur'), auto;
+}
+
+body > .container .code-container > .reload {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: url('../assets/images/cursor.cur'), auto;
+}
+
+body > .container .code-container > .reload:hover {
+    opacity: 0.8;
+    scale: 1.1;
+    transition: all 0.1s ease-in-out;
+}
+
+body > .container > .buttons-container {
+    margin-top: 30px;
+    width: 85%;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body > .container > .buttons-container > button {
+    width: 45%;
+    height: 90px;
+    border: none;
+    position: relative;
+
+    background-image: url('../assets/images/yellow-button.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    cursor: url('../assets/images/cursor.cur'), auto;
+}
+
+body > .container > .buttons-container > button:hover {
+    scale: 1.05;
+    opacity: 0.8;
+    transition: all 0.1s ease-in-out;
+}
+
+body > .container > .buttons-container > .edit-button {
+    background-image: url('../assets/images/orange-button.png');
+}
+
+body > .container > .buttons-container > button > span {
+    width: 60%;
+    font-size: 2rem;
+    font-family: VT323;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+
+
+.message {
+    display: none;
+    margin-top: 25px;
+    background-color: #42210c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-family: VT323;
+    font-size: 1.3rem;
+}
