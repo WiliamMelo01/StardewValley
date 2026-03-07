@@ -25,8 +25,9 @@ function handleEditCode(input) {
 
     console.log(code);
 
-    if(code.length != 10){
-        alert("O código deve conter exatamente 10 caracteres.");
+    if(code.length != 12){
+        alert("O código deve conter exatamente 12 caracteres.");
+        return;
     }
 
     fetch("https://stardewvalley.onrender.com/code", {
